@@ -20,4 +20,4 @@ EXPOSE 8001
 STOPSIGNAL SIGINT
 
 #ENTRYPOINT["", "--", "app","" ]
-CMD ["flask --app app --host=0.0.0.0 run "]
+CMD flask --app app --host=0.0.0.0 run
