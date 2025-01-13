@@ -19,5 +19,5 @@ ENV PYTHONUNBUFFERED 1
 EXPOSE 8001
 STOPSIGNAL SIGINT
 
-ENTRYPOINT["python"]
-CMD ["app.py"]
+#ENTRYPOINT["", "--", "app","" ]
+CMD ["flask --app app --host=0.0.0.0 run "]
